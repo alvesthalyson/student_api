@@ -1,13 +1,7 @@
-# Windows PowerShell - execute em uma pasta nova
-mkdir student_api
-cd student_api
+# Windows PowerShell, dentro da pasta student_api clonada
 python -m venv venv
 .\venv\Scripts\Activate.ps1
 python -m pip install "Django>=5.2,<5.3" "djangorestframework>=3.16,<3.17" "psycopg[binary]>=3.2,<4"
-django-admin startproject config .
-python manage.py startapp students
-# Depois copie os arquivos de students/ e config/urls.py deste projeto
-# e edite config/settings.py (veja config/settings_snippet.py)
 
 # psql como administrador postgres:
 # CREATE USER student_api_user WITH PASSWORD 'Classroom2026!';
